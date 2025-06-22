@@ -9,7 +9,7 @@ const Button = ({ label, onClick, disabled, outline, small, icon: Icon }) => {
           disabled:cursor-not-allowed
           rounded-lg
           hover:opacity-80
-          transition
+          transition cursor-pointer
           px-4
           w-full
           ${outline ? 'bg-white' : 'bg-lime-500'}
