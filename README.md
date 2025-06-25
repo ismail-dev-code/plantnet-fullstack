@@ -1,32 +1,35 @@
 # 🌿 PlantNet – Plant Identification Web App
 
-**PlantNet** is a modern, full-stack web application that allows users to identify plants, store data, and interact with plant-based content securely. Built with React and Express, this app integrates Firebase for authentication and MongoDB for persistent data storage.
+**PlantNet** is a modern, full-stack web application that allows users to identify plants, store data, and interact with plant-related content securely. Built with **React (Vite)** and **Express**, it integrates **Firebase** for authentication and **MongoDB** for database storage.
 
-> "Discover and explore plants around you — digitally."
+> _"Discover and explore plants around you — digitally."_
 
 ---
 
-## 🔗 Live Site
+## 🔗 Live Demo
 
-🌐 **Frontend**: [https://plantnet-bd.web.app](https://plantnet-bd.web.app)  
-📡 **API Base URL**: `https://plantnet-api.onrender.com/api` (example)
+- 🌐 **Frontend**: [https://plantnet-bd.web.app](https://plantnet-bd.web.app)  
+- 📡 **API Base URL**: `https://plantnet-api.onrender.com/api` (example)
 
 ---
 
 ## 🧰 Tech Stack
 
-### 🔹 Frontend (React + Vite)
+### 🔹 Frontend – React + Vite
+
 - React 19
-- Tailwind CSS 4 + DaisyUI
-- Firebase (Authentication)
+- Tailwind CSS 4
+- DaisyUI
 - React Router v7
+- Firebase (Authentication)
 - Axios
 - React Icons
 - React Hot Toast
 - React Spinners
 - Headless UI
 
-### 🔸 Backend (Node.js + Express)
+### 🔸 Backend – Node.js + Express
+
 - Express v5
 - MongoDB v6
 - Dotenv
@@ -36,76 +39,59 @@
 
 ---
 
+## 📦 Notable Dependencies
+
+### ➤ Frontend
+
+| Package           | Purpose                  |
+|-------------------|--------------------------|
+| `react`           | UI rendering             |
+| `react-router`    | Client-side routing      |
+| `firebase`        | Authentication           |
+| `axios`           | HTTP requests            |
+| `tailwindcss`     | Utility-first CSS        |
+| `daisyui`         | Prebuilt UI components   |
+| `react-hot-toast` | Toast notifications      |
+| `react-icons`     | Icon library             |
+| `headlessui`      | Accessible UI primitives |
+
+### ➤ Backend
+
+| Package         | Purpose                   |
+|------------------|---------------------------|
+| `express`       | Server framework          |
+| `mongodb`       | NoSQL database            |
+| `dotenv`        | Environment config        |
+| `cors`          | Cross-origin resource sharing |
+| `jsonwebtoken`  | Authentication (JWT)      |
+| `cookie-parser` | Parse and manage cookies  |
 
 ---
 
-## 🚀 Setup Instructions
+## 📌 Key Features
+
+- ✅ Secure user authentication via Firebase
+- 🌿 Optional real-time plant detection using external APIs
+- 🗂️ Store and manage plant data with MongoDB
+- 🔐 Protected API routes secured with JWT tokens
+- 🔔 Toast notifications and spinners for UX feedback
+- 📱 Fully responsive design optimized for all devices
+
+---
+
+## 🔒 Authentication Flow
+
+1. User signs in via Firebase (frontend)
+2. Firebase ID token is sent to backend
+3. Backend verifies token and returns JWT
+4. JWT is stored in an HTTP-only cookie for secure access
+
+---
+
+## 🚀 Getting Started
 
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/ismail-dev-code/plantnet-fullstack.git
-
-
-cd client
-npm install
-npm run dev
-
-cd server
-npm install 
-nodemon index
-
-## 🚀 Backend .env
-
-PORT=5000
-MONGODB_URI=your_mongodb_connection_uri
-JWT_SECRET=your_jwt_secret
-
-
-## 📌 Key Features
-
-✅ Secure login & registration with Firebase
-
-🌿 Real-time plant detection via external APIs (optional)
-
-🗂️ Store and retrieve plant data from MongoDB
-
-🔐 Auth-protected routes with JWT
-
-🔔 Toast and loading feedback for better UX
-
-📱 Fully responsive UI
-
-
-
-## 🔒 Authentication Flow
-Users sign in via Firebase
-
-JWT is generated from backend using Firebase ID Token
-
-JWT is stored in HTTP-only cookies for API security
-
-## 📦 Dependencies (Highlights)
-| Package           | Purpose             |
-| ----------------- | ------------------- |
-| `react`           | UI rendering        |
-| `tailwindcss`     | Styling utility     |
-| `firebase`        | Authentication      |
-| `axios`           | API requests        |
-| `react-router`    | Page routing        |
-| `daisyui`         | UI components       |
-| `react-hot-toast` | Toast notifications |
-
-## Backend
-
-| Package         | Purpose                   |
-| --------------- | ------------------------- |
-| `express`       | Backend routing           |
-| `mongodb`       | Database connection       |
-| `dotenv`        | Environment variables     |
-| `cors`          | Cross-origin access       |
-| `jsonwebtoken`  | Secure token-based auth   |
-| `cookie-parser` | Read & write HTTP cookies |
-
-
-
+cd plantnet-fullstack
