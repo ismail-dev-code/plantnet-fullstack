@@ -1,20 +1,20 @@
-import Button from '../components/Shared/Button/Button';
 import { useNavigate } from 'react-router';
+import Button from '../components/Shared/Button/Button';
 
 const ErrorPage = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-      <div className="max-w-md w-full text-center p-8 rounded-xl">
-        <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-blue-100">
+    <section className="bg-white min-h-screen flex items-center justify-center px-4">
+      <div className="text-center max-w-md mx-auto">
+        <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-50 rounded-full text-lime-600">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-8 h-8 text-lime-600"
             fill="none"
             viewBox="0 0 24 24"
-            strokeWidth={2}
+            strokeWidth="2"
             stroke="currentColor"
+            className="w-8 h-8"
           >
             <path
               strokeLinecap="round"
@@ -24,23 +24,25 @@ const ErrorPage = () => {
           </svg>
         </div>
 
-        <h1 className="text-3xl font-bold text-gray-800">Oops! Something Went Wrong</h1>
-        <p className="mt-3 text-gray-500">
-          We couldn’t process your request. Try going back or head to the homepage.
+        <h1 className="mt-5 text-3xl font-bold text-gray-800">
+          Oops! Something Went Wrong
+        </h1>
+        <p className="mt-3 text-gray-600 text-sm">
+          We couldn’t find the page you’re looking for. Try one of the options below.
         </p>
 
-        <div className="mt-6 flex flex-col sm:flex-row justify-center gap-4">
+        <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
           <button
             onClick={() => navigate(-1)}
-            className="inline-flex cursor-pointer items-center text-nowrap justify-center px-5 py-2 text-sm font-medium text-gray-700 border border-gray-300 rounded-lg shadow-sm hover:bg-gray-100 transition"
+            className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 transition"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5 mr-2 text-lime-600"
               fill="none"
               viewBox="0 0 24 24"
-              strokeWidth={1.5}
+              strokeWidth="1.5"
               stroke="currentColor"
+              className="w-5 h-5 mr-2"
             >
               <path
                 strokeLinecap="round"
